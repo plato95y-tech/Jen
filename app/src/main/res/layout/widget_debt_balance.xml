@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_balance_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@drawable/widget_background"
+    android:layoutDirection="rtl">
+
+    <!-- Top Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_app_logo"
+            android:contentDescription="سجل الديون" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="بطاقة الرصيد السريع"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#A7F3D0"
+            android:layout_marginStart="8dp" />
+
+        <ImageView
+            android:id="@+id/btn_balance_refresh"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_widget_refresh"
+            android:background="@drawable/widget_icon_circle"
+            android:padding="6dp"
+            android:contentDescription="تحديث" />
+    </LinearLayout>
+
+    <!-- Center Hero Section: Big Balance & Status -->
+    <LinearLayout
+        android:id="@+id/btn_open_balance_report"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الرصيد المتبقي الإجمالي"
+            android:textSize="11sp"
+            android:textColor="#D1FAE5" />
+
+        <TextView
+            android:id="@+id/tv_balance_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00 ر.س"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_balance_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الديون: 0 | المحصل: 0"
+            android:textSize="10sp"
+            android:textColor="#A7F3D0"
+            android:background="@drawable/widget_chip_surface"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Bottom Action Buttons: 3 Modern Pills -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/btn_balance_add_debt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:text="تسجيل دين"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#064E3B"
+            android:background="@drawable/widget_button_background"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_balance_add_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="سداد دفعة"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/widget_button_secondary"
+            android:layout_marginHorizontal="2dp" />
+
+        <TextView
+            android:id="@+id/btn_balance_reports"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="التقارير"
+            android:textSize="11sp"
+            android:textColor="#E2E8F0"
+            android:background="@drawable/widget_button_secondary"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

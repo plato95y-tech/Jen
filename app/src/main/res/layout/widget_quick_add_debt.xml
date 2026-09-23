@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_quick_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/widget_background"
+    android:layoutDirection="rtl">
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_widget_bolt"
+            android:contentDescription="تسجيل سريع" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تسجيل دين سريع"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="6dp" />
+
+        <TextView
+            android:id="@+id/tv_last_customer_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="آخر عميل"
+            android:textSize="10sp"
+            android:textColor="#A7F3D0"
+            android:background="@drawable/widget_chip_surface"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp" />
+    </LinearLayout>
+
+    <!-- Hero Card: Last Customer Focus -->
+    <LinearLayout
+        android:id="@+id/card_last_customer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/widget_card_surface"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <!-- Customer Identity Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_widget_person"
+                android:background="@drawable/widget_icon_circle"
+                android:padding="5dp"
+                android:contentDescription="العميل" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/tv_last_store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اسم العميل"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/tv_last_store_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الرصيد: 0.00 ر.س"
+                    android:textSize="11sp"
+                    android:textColor="#A7F3D0"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 1-Tap Customer Quick Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/btn_quick_add_last_store"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="دين للعميل"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#064E3B"
+                android:background="@drawable/widget_button_background"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/btn_quick_pay_last_store"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="سداد دفعة"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/widget_button_secondary"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- General Quick Actions Footer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/btn_quick_add_general"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="دين لعميل آخر"
+            android:textSize="11sp"
+            android:textColor="#E2E8F0"
+            android:background="@drawable/widget_button_secondary"
+            android:layout_marginEnd="4dp" />
+
+        <TextView
+            android:id="@+id/btn_quick_add_payment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="فتح السجل"
+            android:textSize="11sp"
+            android:textColor="#E2E8F0"
+            android:background="@drawable/widget_button_secondary"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout>

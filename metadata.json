@@ -1,0 +1,6 @@
+{
+  "name": "سجل الديون",
+  "description": "تطبيق إدارة وسجل ديون المحلات والعملاء والمدفوعات بدون إنترنت مع تقارير PDF وإكسل ونسخ احتياطي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

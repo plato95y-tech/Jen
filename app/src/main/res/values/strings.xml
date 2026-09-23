@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">سجل الديون</string>
+    <string name="shortcut_add_debt_short">+ دين جديد</string>
+    <string name="shortcut_add_debt_long">تسجيل دين جديد سريع</string>
+    <string name="shortcut_add_payment_short">✓ سداد دفعة</string>
+    <string name="shortcut_add_payment_long">تسجيل دفعة سداد جديدة</string>
+    <string name="shortcut_reports_short">التقارير</string>
+    <string name="shortcut_reports_long">كشف الحساب والتقارير المالية</string>
+    <string name="widget_summary_title">ملخص الديون والمتأخرين</string>
+    <string name="widget_quick_add_title">تسجيل دين سريع</string>
+    <string name="widget_balance_title">بطاقة الرصيد السريع</string>
+</resources>

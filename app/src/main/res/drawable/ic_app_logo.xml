@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="66dp"
+    android:height="66dp"
+    android:viewportWidth="66"
+    android:viewportHeight="66">
+    <!-- Book / Ledger Cover -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,10 C13.8,10 12,11.8 12,14 L12,52 C12,54.2 13.8,56 16,56 L50,56 C52.2,56 54,54.2 54,52 L54,14 C54,11.8 52.2,10 50,10 Z" />
+    <!-- Book Spine Accent -->
+    <path
+        android:fillColor="#004D40"
+        android:pathData="M12,14 C12,11.8 13.8,10 16,10 L22,10 L22,56 L16,56 C13.8,56 12,54.2 12,52 Z" />
+    <!-- Ledger Lines -->
+    <path
+        android:fillColor="#00897B"
+        android:pathData="M27,18 L48,18 L48,21 L27,21 Z" />
+    <path
+        android:fillColor="#B2DFDB"
+        android:pathData="M27,25 L44,25 L44,28 L27,28 Z" />
+    <!-- Plus/Minus Badges for Debt & Settlement -->
+    <!-- Debt Badge (Red Circle with Up/NorthEast arrow or plus) -->
+    <path
+        android:fillColor="#D32F2F"
+        android:pathData="M31,38 C31,34.7 33.7,32 37,32 C40.3,32 43,34.7 43,38 C43,41.3 40.3,44 37,44 C33.7,44 31,41.3 31,38 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M36,34 L38,34 L38,37 L41,37 L41,39 L38,39 L38,42 L36,42 L36,39 L33,39 L33,37 L36,37 Z" />
+    <!-- Checkmark Badge (Green Circle) -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M41,45 C41,42.2 43.2,40 46,40 C48.8,40 51,42.2 51,45 C51,47.8 48.8,50 46,50 C43.2,50 41,47.8 41,45 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44.5,45.2 L43.2,43.9 L42.3,44.8 L44.5,47 L49.2,42.3 L48.3,41.4 Z" />
+</vector>

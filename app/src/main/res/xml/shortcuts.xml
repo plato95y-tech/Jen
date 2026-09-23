@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="add_debt"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_add_debt_short"
+        android:shortcutLongLabel="@string/shortcut_add_debt_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.debttracker.kvdjrx"
+            android:targetClass="com.example.MainActivity">
+            <extra android:name="shortcut_action" android:value="add_debt" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="add_payment"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_add_payment_short"
+        android:shortcutLongLabel="@string/shortcut_add_payment_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.debttracker.kvdjrx"
+            android:targetClass="com.example.MainActivity">
+            <extra android:name="shortcut_action" android:value="add_payment" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="reports"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/shortcut_reports_short"
+        android:shortcutLongLabel="@string/shortcut_reports_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.aistudio.debttracker.kvdjrx"
+            android:targetClass="com.example.MainActivity">
+            <extra android:name="shortcut_action" android:value="reports" />
+        </intent>
+    </shortcut>
+</shortcuts>
